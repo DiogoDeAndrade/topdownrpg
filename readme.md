@@ -13,8 +13,8 @@ of maps, but haven't explored many solutions for that so far).
 
 ## License
 
-All source code used is licensed under the [MIT license](LICENSE).
-Art assets by [Pita], bought through Humble Bundle - Not for free use!
+* All source code used is licensed under the [MIT license](LICENSE).
+* Art assets by [Pita], bought through Humble Bundle - Not for free use!
 
 ## Metadata
 

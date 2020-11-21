@@ -1,0 +1,22 @@
+.vs
+Temp
+*.userprefs
+*.csproj
+*.sln
+*.pdb
+Library
+*.DS_Store
+*.apk
+/*.unityproj
+obj/*
+Builds/*
+obj/*
+Logs/*
+Sirenix/Assemblies/AOT
+Android
+
+Assets/Libs/Pixel Art Rotation/Documentation\.meta
+
+Assets/Libs/Pixel Art Rotation/Scripts\.meta
+
+Assets/Photon Unity Networking/Demos/DemoPickup\.meta

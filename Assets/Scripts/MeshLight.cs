@@ -65,7 +65,7 @@ public class MeshLight : MonoBehaviour
 
         positions.Add(origin.position);
 
-        for (int i = 0; i < subdivisions; i++)
+        for (int i = 0; i <= subdivisions; i++)
         {
             var delta = new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0.0f);
 
@@ -83,7 +83,7 @@ public class MeshLight : MonoBehaviour
             angle += angleInc;
         }
 
-        for (int i = 0; i < subdivisions - 1; i++)
+        for (int i = 0; i <= subdivisions; i++)
         {
             triangles.Add(0);
             triangles.Add(i);
@@ -93,6 +93,7 @@ public class MeshLight : MonoBehaviour
         mesh.SetVertices(positions);
         mesh.SetIndices(triangles, MeshTopology.Triangles, 0);
         mesh.UploadMeshData(false);
+        mesh.bounds = new Bounds(Vector3.zero, Vector3.one * 100000.0f);
 
         Graphics.DrawMesh(mesh, new Vector3(0,0,-1), Quaternion.identity, material, gameObject.layer);
     }
